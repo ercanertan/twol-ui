@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Ercanertan\TwolUI\Components\Blade\DateTime;
 
-use Ercanertan\TwolUI\Components\BladeComponent;
 use DateInterval;
 use DateTimeInterface;
+use Ercanertan\TwolUI\Components\BladeComponent;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 
