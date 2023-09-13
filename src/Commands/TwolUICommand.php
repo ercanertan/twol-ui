@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Ercanertan\TwolUI\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TwolUICommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'twol-ui';
 
     public $description = 'My command';
 
