@@ -22,4 +22,18 @@ class TwolUIServiceProvider extends PackageServiceProvider
             ->hasMigration('create_twol-ui_table')
             ->hasCommand(TwolUICommand::class);
     }
+
+    public function bootingPackage(){
+        $this->callAfterResolving(BladeCompiler::class, function (BladeCompiler $blade) {
+            $prefix = config('twol-ui.prefix', '');
+            $assets = config('twol-ui.assets', []);
+
+            /** @var BladeComponent $component */
+            foreach (config('twol-ui.components', []) as $alias => $component) {
+                $blade->component($component, $alias, $prefix);
+
+                $this->registerAssets($component, $assets);
+            }
+        });
+    }
 }

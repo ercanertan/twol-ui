@@ -15,7 +15,6 @@ class Alert extends BladeComponent
 
     public function __construct(string $type = 'alert')
     {
-        dd('ola');
         $this->type = $type;
     }
 
