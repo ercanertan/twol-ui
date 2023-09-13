@@ -23,7 +23,8 @@ class TwolUIServiceProvider extends PackageServiceProvider
             ->hasCommand(TwolUICommand::class);
     }
 
-    public function bootingPackage(){
+    public function bootingPackage()
+    {
         $this->callAfterResolving(BladeCompiler::class, function (BladeCompiler $blade) {
             $prefix = config('twol-ui.prefix', '');
             $assets = config('twol-ui.assets', []);
