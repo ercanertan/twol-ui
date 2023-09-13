@@ -2,9 +2,9 @@
 
 namespace Ercanertan\TwolUI\Tests;
 
+use Ercanertan\TwolUI\TwolUIServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Ercanertan\TwolUI\TwolUIServiceProvider;
 
 class TestCase extends Orchestra
 {

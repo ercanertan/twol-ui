@@ -2,9 +2,9 @@
 
 namespace Ercanertan\TwolUI;
 
+use Ercanertan\TwolUI\Commands\TwolUICommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Ercanertan\TwolUI\Commands\TwolUICommand;
 
 class TwolUIServiceProvider extends PackageServiceProvider
 {

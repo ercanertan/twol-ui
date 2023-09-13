@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Ercanertan\TwolUI\Components\Blade\DateTime;
 
-use Ercanertan\TwolUI\Components\BladeComponent;
 use Carbon\Carbon as CarbonAlias;
 use Carbon\CarbonInterface;
 use DateTimeInterface;
+use Ercanertan\TwolUI\Components\BladeComponent;
 use Illuminate\Contracts\View\View;
 
 class Carbon extends BladeComponent

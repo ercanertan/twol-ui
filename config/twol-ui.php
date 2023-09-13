@@ -1,5 +1,7 @@
 <?php
+
 use Ercanertan\TwolUI\Components\Blade;
+
 // config for Ercanertan/TwolUI
 return [
 
